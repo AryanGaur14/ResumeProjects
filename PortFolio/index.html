@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Gaur-portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Poppins:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body main hr {
+        border: 0;
+        background-color: rgb(184, 184, 252);
+        height: 1.2px;
+        margin: 40px 84px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: rgb(0, 0, 44)
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white
+    }
+
+    nav ul li a:hover {
+        color: rgb(184, 184, 252);
+        font-size: 1.01rem;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 90px 0;
+
+    }
+
+    .firstSection>div {
+        width: 30%;
+    }
+
+    .leftSection {
+        font-size: 2.5rem;
+    }
+    .leftSection .button{
+        padding: 50px;
+    }
+
+    .leftSection button {
+        padding: 15px;
+        color:white;
+        background-color: rgb(0, 0, 33);
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+
+    .rightSection img {
+        width: 80%;
+    }
+
+    .purple {
+        color: rgb(169, 113, 220);
+    }
+
+    #element {
+        color: rgb(169, 113, 220);
+    }
+
+    .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+    }
+
+    .secondSection h1 {
+        font-size: 1.9rem;
+    }
+
+    .text-gray {
+        color: gray;
+    }
+
+    .secondSection .box {
+        background: white;
+        display: flex;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+
+    }
+
+    .secondSection .vertical {
+        height: 50px;
+        width: 1px;
+        background-color: white;
+        margin: 0 130px;
+    }
+    .secondSection .box .vertical img{  
+        position: relative;
+        height: 50px;
+        width:50px;
+        top: -51px;
+        left: -17px;
+    }
+    .secondSection .box .vertical-text{  
+        position: relative;
+        bottom: 5px;
+        left: -17px;
+        width: 80px;
+    }
+    .secondSection .box .vertical-description{  
+        position: relative;
+        font-size: 9px;
+        width: 150px;
+        color:grey;
+        bottom: -4px;
+        left: -17px;
+
+    }
+    .footer{
+        display: flex;
+        background-color:#01011a;
+        height:  233px;
+        justify-content: space-around;
+        margin:auto;
+        list-style: none;
+
+    }
+    .footer ul {
+        list-style: none;
+    }
+    .footer >div{
+         width: 228px;
+    }
+    footer .text-centre{
+        text-align: center;
+        color: gray;       
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aryan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/#">Home</a></li>
+                    <li><a href="/#">About</a></li>
+                    <li><a href="/#">Service</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/#">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="purple">Aryan</span>
+                <div>and I am a Passionate </div>
+                <!-- <div>Java Full Stack Developer</div> -->
+                <span id="element"></span>
+                <div class="button">
+                    <button>Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="DeveloperImage.png" alt="DeveloperImage" width=80%>
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical"> <img src="developer.png" alt="developer">
+                    <div class="vertical-text">HTML Developer</div>
+                    <div class="vertical-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eaque repudiandae alias, odit, ipsum aliquid error perferendis aperiam officia atque mollitia. Minima, aliquam. Aliquam molestias impedit natus aspernatur itaque facilis, quibusdam obcaecati tempora optio?</div>
+                </div>
+                <div class="vertical"> <img src="developer.png" alt="developer">
+                    <div class="vertical-text">Yet TO Get</div>
+                    <div class="vertical-description"><span id="element-2"></span></div>
+                </div>                
+                <!-- <div class="vertical"> <img src="developer.png" alt="developer">
+                    <div class="vertical-text">HTML Developer</div>
+                    <div class="vertical-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eaque repudiandae alias, odit, ipsum aliquid error perferendis aperiam officia atque mollitia. Minima, aliquam. Aliquam molestias impedit natus aspernatur itaque facilis, quibusdam obcaecati tempora optio?</div>
+                </div>
+                <div class="vertical"> <img src="developer.png" alt="developer">
+                    <div class="vertical-text">HTML Developer</div>
+                    <div class="vertical-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eaque repudiandae alias, odit, ipsum aliquid error perferendis aperiam officia atque mollitia. Minima, aliquam. Aliquam molestias impedit natus aspernatur itaque facilis, quibusdam obcaecati tempora optio?</div>
+                </div> -->
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class ="footer">
+            <div class="footer-first">Aryan's Portfolio</div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>Contact Me</li>
+                    <li>About</li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>Contact Me</li>
+                    <li>About</li>
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>Contact Me</li>
+                    <li>About</li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="text-centre">
+            Copyrights &#169 Aryan-Portfolio.in | all rights reserved.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Java Full Stack Developer..</i>'],
+            typeSpeed: 60,
+        });
+        var typed = new Typed('#element-2', {
+            strings: ['<i>....</i>'],
+            typeSpeed: 60,
+        });
+    </script>
+</body>
+
+</html>
