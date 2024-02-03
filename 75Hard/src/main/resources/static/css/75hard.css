@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+/* ------------------------------- headern ----------------------------- */
+
+#header {
+    background-image: url(../images/Fitness_img/banner.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.header-text {
+    margin-top: 8%;
+    margin-left: 3.5%;
+    margin-right: 51.5%;
+    
+
+}
+
+.header-text h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    font-size: 40px;
+    margin-top: 20px;
+    /* color: linear; */
+    background: linear-gradient(to right, #48cae4, #90e0ef,
+            #ade8f4, #caf0f8);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.navbar-nav li a {
+    float: right;
+    color: #fff !important;
+}
+
+.navbar-brand img {
+    width: 160px;
+    margin-left: 10px;
+}
+
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+
+}
+
+.user {
+    float: right;
+    margin-right: -600px;
+    position: relative;
+    padding: 10px;
+}
+
+nav .fa-bars {
+    color: #fff imo !important;
+    font-size: 26px;
+}
+
+
+/* ---------------------------------------welcome text --------------------------------------------*/
+/* .container
+{
+
+} */
+.welcome {
+    padding: 50px 100px;
+    margin-top: -140px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+}
+
+.welcome .home-btn {
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #013f7e;
+    border: 2px rgb(24, 242, 246) solid;
+
+}
+
+.welcome .btn:focus {
+    box-shadow: none;
+}
+
+.welcome h1 {
+    color: #333;
+}
+
+/*---------------------- about------------------ */
+
+#about {
+    background-color: #1d3557;
+    color: #a8dadc;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#about .col-md-6 {
+    padding: 20px 10px;
+    padding-bottom: -50px;
+}
+
+#about h3 {
+    color: #f1faee;
+    margin: 20px auto;
+}
+
+/* .row img{
+    height: 60%;
+    padding-left:10px ;
+} */
+.youtube {
+    height: 25vh;
+    padding-top: 40px;
+}
+
+/*------------------------------------ sevices---------------------------------- */
+#services {
+    background-color: #efefef;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+#services .col-md-4 {
+    padding: 20px;
+}
+
+#services .col-md-4 h4 {
+    padding: 5px;
+}
+
+#services .col-md-4 a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#services .col-md-4 img {
+    width: 60px;
+}
+
+#serviecs .col-md-4 p {
+    padding: 5px;
+    text-align: justify;
+}
+
+/* -- ----------------------features--------------- -- */
+#features {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/Fitness_img/feature-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+
+}
+
+#features .col-md-6 {
+    padding: 20px;
+}
+
+.feature-box {
+    height: 120px;
+}
+
+.feature-box .feature-left {
+    height: 120px;
+    width: 20%;
+    float: left;
+}
+
+.feature-box .feature-left i {
+    padding-top: 13px;
+    font-size: 50px;
+}
+
+.feature-box .feature-right {
+    height: 120px;
+    width: 80%;
+    float: left;
+}
+
+.feature-box .feature-right h4 {
+
+    padding-left: 15px;
+    text-align: left;
+}
+
+.feature-box .feature-right p {
+    padding-bottom: 10px;
+    padding-left: 31px;
+    text-align: left;
+}
+
+/* --------------------testimonials-------------- */
+#testimonials {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#testimonials .col-md-4 {
+    padding: 10px 30px;
+}
+
+#testimonials img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: -30px;
+    margin-top: -40px;
+    border: 5px solid #fff;
+    margin-bottom: 30px;
+}
+
+.review {
+    font-size: 16px;
+    padding: 10px 10px 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.2);
+}
+
+.review .fa-twitter {
+    color: #013f7e;
+}
+
+#testimonials span {
+    color: #013f7e;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#testimonials h1 {
+    margin-bottom: 20px;
+    color: #013f7e;
+}
+
+#testimonials p {
+    padding-bottom: 20px;
+}
+
+#testimonials .middle {
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+#testimonials p {
+    padding-bottom: 20px;
+}
+
+/* ---------------subscribe --------------- */
+.subscribe {
+    padding: 50px 20px;
+    background-color: #013f7e;
+    position: relative;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe h3,
+.subscribe p {
+    color: #fff;
+}
+
+.subscribe .input-group {
+    border-radius: 30px;
+    background: #fff;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.subscribe .form-control {
+    border: none;
+    background: transparent;
+
+}
+
+.subscribe .form-control:focus {
+    box-shadow: none;
+    background: transparent;
+
+}
+
+.subscribe .input-group-append {
+    background-image: linear-gradient(to right,#1c03b5,#5c8bef);
+    border-radius: 30px;
+}
+.subscribe .input-group-text {
+    background:transparent;
+    border: none;
+    color: #fff;
+}
+.subscribe .btn:focus {
+    box-shadow: none;
+}

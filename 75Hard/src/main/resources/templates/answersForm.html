@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Answers Form</title>
+  <link rel="stylesheet" href="CSS/questionForm.css">
+</head>
+
+<body>
+  <div class="container">
+    <form th:action="@{/submitanswer}" th:object="${answeringQuestion}" method="POST">
+      <h1>Add Your Answer!!</h1>
+      <textarea th:field="*{answer}" name="answer" required></textarea>
+      <input type="submit" value="SUBMIT">
+    </form>
+  </div>
+</body>
+
+</html>

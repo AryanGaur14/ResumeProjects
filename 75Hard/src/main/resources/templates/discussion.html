@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forum</title>
+    <link rel="stylesheet" href="css/discussion.css">
+    <link rel="shortcut icon" href="fav-icon.png">
+    <script src="https://kit.fontawesome.com/401b96a213.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="testimonial-heading">
+            <span>Questions</span>
+            <h1>Discussion Forum</h1>
+        </div>
+    
+        <!-- testimonials-box-container -->
+        <div class="testimonials-box-container" th:each="tempQuestions:${listQuestion}">
+            <!-- box 1 -->
+            <div class="testimonials-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="images/profile.jpeg" alt="">
+                        </div>
+                        <div class="name-user">
+                            <strong th:text="${tempQuestions.askedBy}"></strong>
+                            <span th:text="${tempQuestions.postedDate}"></span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <!-- <a href="answers.html" target="_blank"> See answer</a> -->
+                        <a th:href="@{/answers(questionId=${tempQuestions.id})}" target="_blank">See Answers</a>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p th:text="${tempQuestions.Question}"></p>
+                </div>
+            </div>
+            <!-- box 2 -->
+            <!-- <div class="testimonials-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="profile.jpeg" alt="">
+                        </div>
+                        <div class="name-user">
+                            <strong>Username</strong>
+                            <span>@username</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <a href="answers.html" target="_blank"> See answer</a>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sae natus at! Quas atque eveniet ut nostrum saepe praesentium? Neque laborum
+                        enim veniam atque nemo molestiae officiis iusto magnam eaque.</p>
+                </div>
+            </div> -->
+            <!-- box 3 -->
+            <!-- <div class="testimonials-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="profile.jpeg" alt="">
+                        </div>
+                        <div class="name-user">
+                            <strong>Username</strong>
+                            <span>@username</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <a href="answers.html" target="_blank"> See answer</a>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque repudiandae natus at! Quas
+                        atque eveniet ut nostrum saepe praesentium? Neque laborum enim veniam atque nemo molestiae
+                        officiis iusto magnam eaque.</p>
+                </div>
+            </div> -->
+            <!-- box 4 -->
+            <!-- <div class="testimonials-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="profile.jpeg" alt="">
+                        </div>
+                        <div class="name-user">
+                            <strong>Username</strong>
+                            <span>@username</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <a href="answers.html" target="_blank"> See answer</a>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque repudiandae natus at! Quas
+                        atque eveniet ut nostrum saepe praesentium? Neque laborum enim veniam atque nemo molestiae
+                        officiis iusto magnam eaque.</p>
+                </div>
+            </div>
+            
+            
+            <div class="testimonials-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="profile.jpeg" alt="">
+                        </div>
+                        <div class="name-user">
+                            <strong>Username</strong>
+                            <span>@username</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <a href="answers.html" target="_blank"> See answer</a>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque repudiandae natus at! Quas
+                        atque eveniet ut nostrum saepe praesentium? Neque laborum enim veniam atque nemo molestiae
+                        officiis iusto magnam eaque.</p>
+                </div>
+            </div>
+            <div class="testimonials-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="profile.jpeg" alt="">
+                        </div>
+                        <div class="name-user">
+                            <strong>Username</strong>
+                            <span>@username</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <a href="answers.html" target="_blank"> See answer</a>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque repudiandae natus at! Quas
+                        atque eveniet ut nostrum saepe praesentium? Neque laborum enim veniam atque nemo molestiae
+                        officiis iusto magnam eaque.</p>
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="ask-question">
+            <a th:href="@{/questionForm}"target="_blank">Ask Question</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
